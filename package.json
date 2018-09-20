@@ -18,6 +18,5 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "http://davidicus.github.io/express-site"
+  }
 }
