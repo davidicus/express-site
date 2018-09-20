@@ -1,0 +1,138 @@
+@import "scss/utils/_utils.scss";
+
+/////////////////////
+// Menu
+////////////////////
+.open {
+  overflow: hidden;
+}
+
+.menu {
+  background: #fff;
+  display: flex;
+  // height: 0;
+  width: 100%;
+  width: 0;
+  // overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: translatex(0);
+  // transition: height .25s cubic-bezier(.22,.68,0,1.71) .25s;
+  transition: width 0.75s cubic-bezier(0.22, 0.68, 0, 1.71) 0.25s,
+    transform 0.2s ease-in-out 0.45s;
+  z-index: 900;
+
+  &::after {
+    background: $brand-blue;
+    content: "";
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translatex(0);
+    transition: width 0.75s cubic-bezier(0.22, 0.68, 0, 1.71) 0.4s,
+      transform 0.2s ease-in-out;
+
+    z-index: 2;
+  }
+
+  .open & {
+    height: 100%;
+    // overflow: visible;
+    width: 100vw;
+    transform: translatex(0);
+    transition: width 0.25s cubic-bezier(0.22, 0.68, 0, 1.71) 0.25s,
+      transform 0.2s ease-in-out 0.45s;
+  }
+
+  .open &::after {
+    // animation: spread .75s forwards;
+    width: 100vw;
+    transform: translatex(100%);
+    transition: width 0.75s cubic-bezier(0.22, 0.68, 0, 1.71) 0s,
+      transform 0.2s ease-in-out 0.45s;
+  }
+
+  &-toggle {
+    z-index: 999;
+  }
+
+  &-form {
+    display: none;
+    @include bp(880) {
+      display: block;
+      width: 50%;
+    }
+  }
+
+  &-container {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/semiTruckReduced.jpg")
+      50% 50%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    @include bp(880) {
+      width: 50%;
+    }
+  }
+
+  &-container::after {
+    background: rgba($brand-blue, 0.6);
+    background: radial-gradient(rgba($brand-blue, 0.6), $brand-blue);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &-nav {
+    position: relative;
+    // z-index: 1;
+
+    .open & {
+      z-index: 1;
+    }
+  }
+
+  &-nav-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-nav-items {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &-nav-anchors {
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 46px;
+    position: relative;
+  }
+
+  &-nav-anchors::after {
+    right: 0;
+    bottom: -5px;
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 0;
+    background: #ff285b;
+    transition: 0.25s;
+    opacity: 0;
+  }
+
+  &-nav-anchors:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+}

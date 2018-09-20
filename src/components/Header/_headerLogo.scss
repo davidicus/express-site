@@ -1,0 +1,111 @@
+@import "scss/utils/_utils.scss";
+
+/////////////////
+// Logo styles
+////////////////
+.main-header-logo {
+  align-items: center;
+  display: flex;
+  color: $brand-blue;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  position: relative;
+
+  .open & {
+    z-index: 999;
+  }
+
+  span {
+    display: none;
+    opacity: 0;
+    position: relative;
+    top: -0.65rem;
+    transform: translatex(-1.5rem);
+    transition: opacity 0.2s linear, transform 0.2s ease-in 0.15s;
+
+    @include bp(983) {
+      display: block;
+    }
+  }
+
+  span:last-child {
+    font-size: 22px;
+    font-weight: 200;
+    position: absolute;
+    left: 238px;
+    top: 64px;
+  }
+
+  img {
+    height: 50px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s linear;
+    width: 50px;
+    @include bp(880) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  svg {
+    height: 50px;
+    margin-right: 0.25rem;
+    transition: opacity 0.2s linear;
+    width: 50px;
+    @include bp(880) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+      transition: opacity 0.75s linear;
+    }
+
+    svg {
+      opacity: 0;
+      transition: opacity 0.75s linear;
+    }
+
+    span {
+      opacity: 1;
+      transform: translatex(0);
+      transition: opacity 0.65s linear, transform 0.2s ease-in;
+    }
+
+    span:last-child {
+      transition: opacity 0.65s linear 0.15s, transform 0.2s ease-in 0.15s;
+    }
+  }
+}
+
+path {
+  /*animation*/
+  animation: dash 2s forwards;
+  stroke-dasharray: 997.0122680664062;
+  stroke-dashoffset: 997.0122680664062;
+
+  .open & {
+    stroke: $white;
+
+    @include bp(880) {
+      stroke: $brand-blue;
+    }
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: -997.0122680664062;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
