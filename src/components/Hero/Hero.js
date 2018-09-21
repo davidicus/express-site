@@ -4,32 +4,37 @@ class Hero extends Component {
   constructor(props) {
     super(props);
     this.textInput = React.createRef();
+    this.heroSlide = [];
   }
+
+  addClassToNext = e => {
+    const current = this.heroSlide.indexOf(e.target);
+    e.target.classList.remove("slidein");
+    let next = current + 1;
+    if (current === 2) {
+      next = 0;
+    }
+    this.heroSlide[next].className = "slidein";
+  };
+
   componentDidMount() {
-    const listener = e => {
-      const current = heroSlide.indexOf(e.target);
-      e.target.classList.remove("slidein");
-      let next = current + 1;
-      if (current === 2) {
-        next = 0;
-      }
-      heroSlide[next].className = "slidein";
-      // document.querySelector(".slidein").classList.remove('slideIn');
-
-      //
-    };
-
-    const heroSlide = [
+    this.heroSlide = [
       document.getElementById("hero-slide1"),
       document.getElementById("hero-slide2"),
       document.getElementById("hero-slide3")
     ];
 
-    heroSlide.forEach(slide => {
-      slide.addEventListener("animationend", listener, false);
+    this.heroSlide.forEach(slide => {
+      slide.addEventListener("animationend", this.addClassToNext, false);
     });
 
-    heroSlide[0].className = "slidein";
+    this.heroSlide[0].className = "slidein";
+  }
+
+  componentUnMount() {
+    this.heroSlide.forEach(slide => {
+      slide.removeEventListener("animationend", this.addClassToNext, false);
+    });
   }
 
   render() {
