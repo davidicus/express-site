@@ -11,7 +11,11 @@
   }
 
   &-items {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
+
+    @include bp(880) {
+      margin-left: 3rem;
+    }
   }
 
   &-items:nth-child(2) {
@@ -27,9 +31,11 @@
   }
 
   &-anchors {
+    // border: 1px solid red;
     color: $brand-blue;
     cursor: pointer;
     font-size: 0.75rem;
+    // padding: 1rem;
     position: relative;
     text-transform: uppercase;
 

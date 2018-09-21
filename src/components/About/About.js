@@ -14,15 +14,17 @@ class About extends Component {
         <div className="about-photo">
           <span>
             Our drivers are TSA approved and approved by the Federal Aviation
-            Administration (FAA) for the Indirect Air Carrir Standard Security
+            Administration (FAA) for the Indirect Air Carrier Standard Security
             Program (IACSSP).
           </span>
           <img src={boxCart} alt="delivery man" />
-          <img
-            className="about-photo-secondary"
-            src={driver}
-            alt="delivery man with clip board"
-          />
+        </div>
+        <div className="about-photo-secondary">
+          <span>
+            All drivers are uniformed and OSHA trained. Ready to go 24 hours a
+            day 7 days a week.
+          </span>
+          <img src={driver} alt="delivery man with clip board" />
         </div>
       </div>
     );

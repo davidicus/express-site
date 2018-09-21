@@ -13,8 +13,8 @@
     line-height: 1;
     margin: 0;
     position: relative;
+    transform: translateY(-71px);
     // top: 32%;
-    // transform: translatey(-34%);
     // width: calc(100% - 12rem);
     // z-index: 2;
     @include bp(723) {
@@ -84,7 +84,7 @@
   cursor: pointer;
   position: absolute;
   right: -64px;
-  top: 76%;
+  top: 64%;
   transform: rotate(90deg);
 
   &::before {
