@@ -1,0 +1,148 @@
+@import "scss/utils/_base.scss";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  &-header {
+    // left: 12rem;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    // top: 32%;
+    // transform: translatey(-34%);
+    // width: calc(100% - 12rem);
+    // z-index: 2;
+    @include bp(723) {
+      padding-left: 5rem;
+    }
+
+    span {
+      color: $brand-blue;
+      display: block;
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @include bp(611) {
+        font-size: 4.5rem;
+      }
+
+      @include bp(880) {
+        font-size: 6.5rem;
+      }
+
+      @include bp(1058) {
+        font-size: 8rem;
+      }
+    }
+
+    span:nth-of-type(2) {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 135px;
+        height: 1.45rem;
+        background: $brand-red;
+        left: -9rem;
+        top: 130%;
+        // transform: translatey(-50%);
+
+        @include bp(880) {
+          top: 140%;
+        }
+      }
+    }
+  }
+
+  &-header span:nth-of-type(n + 3) {
+    animation-delay: 0.5s;
+    color: $brand-red;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    white-space: nowrap;
+    font-weight: bold;
+    clip-path: inset(0 100% 100% 0);
+  }
+
+  &-header span:nth-of-type(3) {
+    position: relative;
+  }
+}
+
+.slidein {
+  animation: flash 2.5s forwards;
+}
+
+.location-pointer {
+  cursor: pointer;
+  position: absolute;
+  right: -64px;
+  top: 76%;
+  transform: rotate(90deg);
+
+  &::before {
+    content: "";
+    bottom: 50%;
+    border-bottom: 2px solid $gray;
+    border-right: 2px solid $gray;
+    height: 19px;
+    left: 117%;
+    position: absolute;
+    transform: translate(0, 50%) rotate(-45deg);
+    transition: color 0.25s ease, transform 0.25s $bouncy2;
+    width: 19px;
+  }
+
+  &::after {
+    background: $gray;
+    bottom: 50%;
+    content: "";
+    height: 2px;
+    left: 104%;
+    position: absolute;
+    transform: translatex(0);
+    transition: color 0.25s ease, transform 0.25s $bouncy2;
+    width: 40px;
+    // transform: rotate(-90deg);
+  }
+
+  &:hover::before {
+    border-color: $brand-red;
+    transform: translate(10px, 50%) rotate(-45deg);
+  }
+
+  &:hover::after {
+    background: $brand-red;
+    transform: translatex(10px);
+  }
+
+  h3 {
+    color: $darkGray;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+//////////////////
+// Animations
+/////////////////
+
+@keyframes flash {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 100% 0 0);
+  }
+}

@@ -1,3 +1,28 @@
 @import "scss/utils/_base.scss";
 @import "components/Header/_header.scss";
 @import "components/Menu/_menu.scss";
+@import "components/Hero/_hero.scss";
+
+#root,
+.main-header,
+.main-content {
+  width: 100%;
+}
+
+.main-header {
+  display: flex;
+  padding: 1rem;
+
+  @include bp(880) {
+    padding: 4rem;
+  }
+}
+
+.main-content {
+  height: calc(100vh - 82px);
+  padding: 1rem 1rem 0;
+
+  @include bp(880) {
+    height: calc(100vh - 228px);
+  }
+}
