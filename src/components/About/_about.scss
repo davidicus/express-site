@@ -1,6 +1,7 @@
 @import "scss/utils/_utils.scss";
 
 .about {
+  text-align: center;
   transform: translateY(-27px);
   margin-bottom: 3rem;
 
@@ -10,18 +11,18 @@
 
   &-text {
     margin: 0 2rem 2rem auto;
+    max-width: 340px;
     text-align: right;
     width: 89%;
 
-    @include bp(880) {
-      font-size: 2rem;
-      width: 430px;
+    @include bp(800) {
+      max-width: 430px;
     }
 
     @include bp(1115) {
       margin: 0 4rem 4rem auto;
       font-size: 2rem;
-      width: 588px;
+      max-width: 588px;
     }
   }
 
@@ -33,6 +34,7 @@
 
   // Photos
   &-photo {
+    display: inline-block;
     position: relative;
 
     span {
@@ -52,6 +54,18 @@
       @include bp(1115) {
         width: 40%;
       }
+    }
+  }
+
+  &-photo-secondary {
+    display: none;
+    position: absolute;
+    right: -82px;
+    width: 375px;
+    bottom: -46px;
+
+    @include bp(1245) {
+      display: block;
     }
   }
 }
