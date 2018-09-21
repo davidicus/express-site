@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.js";
 import Menu from "./components/Menu/Menu.js";
 import Main from "./components/Main/Main.js";
 import Hero from "./components/Hero/Hero.js";
+import About from "./components/About/About.js";
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Header />
         <Main>
           <Hero />
+          <About />
         </Main>
         <Menu />
       </Fragment>

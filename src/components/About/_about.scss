@@ -1,0 +1,57 @@
+@import "scss/utils/_utils.scss";
+
+.about {
+  transform: translateY(-27px);
+  margin-bottom: 3rem;
+
+  @include bp(1115) {
+    transform: translateY(-55px);
+  }
+
+  &-text {
+    margin: 0 2rem 2rem auto;
+    text-align: right;
+    width: 89%;
+
+    @include bp(880) {
+      font-size: 2rem;
+      width: 430px;
+    }
+
+    @include bp(1115) {
+      margin: 0 4rem 4rem auto;
+      font-size: 2rem;
+      width: 588px;
+    }
+  }
+
+  &-text__bold {
+    color: $brand-blue;
+    display: block;
+    font-weight: bold;
+  }
+
+  // Photos
+  &-photo {
+    position: relative;
+
+    span {
+      background: $white;
+      bottom: -2rem;
+      left: 0;
+      padding: 0.5rem;
+      position: absolute;
+      width: 90%;
+
+      @include bp(880) {
+        bottom: 0;
+        padding: 1rem;
+        width: 60%;
+      }
+
+      @include bp(1115) {
+        width: 40%;
+      }
+    }
+  }
+}
