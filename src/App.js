@@ -5,6 +5,9 @@ import Menu from "./components/Menu/Menu.js";
 import Main from "./components/Main/Main.js";
 import Hero from "./components/Hero/Hero.js";
 import About from "./components/About/About.js";
+import Services from "./components/Services/Services.js";
+import Rates from "./components/Rates/Rates.js";
+import Contact from "./components/Contact/Contact.js";
 
 class App extends Component {
   render() {
@@ -14,6 +17,9 @@ class App extends Component {
         <Main>
           <Hero />
           <About />
+          <Services />
+          <Rates />
+          <Contact />
         </Main>
         <Menu />
       </Fragment>

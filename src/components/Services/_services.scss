@@ -1,0 +1,31 @@
+@import "scss/utils/_utils.scss";
+
+.services {
+  background: url("../img/deliveryDoodle.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 100vh;
+  text-align: center;
+  width: 90%;
+
+  h3 {
+    color: #2d6eb6;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include bp(945) {
+      font-size: 4.5rem;
+    }
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 545px;
+
+    @include bp(1115) {
+      font-size: 1.25rem;
+    }
+  }
+}

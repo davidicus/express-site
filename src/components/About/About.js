@@ -5,7 +5,7 @@ import driver from "../../img/driverPreview.jpeg";
 class About extends Component {
   render() {
     return (
-      <div className="about">
+      <div id="about" className="about">
         <p className="about-text">
           <span className="about-text__bold">Express Messenger Service</span>{" "}
           has been meeting the "On Demand" and "Scheduled" delivery requirements

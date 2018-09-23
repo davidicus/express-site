@@ -1,0 +1,111 @@
+@import "scss/utils/_utils.scss";
+
+.modal {
+  background: $brand-blue;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  z-index: 9999;
+
+  &-exit-toggle {
+    display: inline-block;
+    cursor: pointer;
+    height: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 2rem;
+
+    &::before,
+    &::after {
+      background: $white;
+      content: "";
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      width: 2rem;
+    }
+
+    &::before {
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      right: 50%;
+      transform: rotate(45deg);
+      transform: translate(50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+
+  &-header {
+    color: $white;
+    font-size: 1.5rem;
+  }
+
+  &-header-blurb {
+    color: $white;
+    font-size: 1.15rem;
+  }
+
+  &-form {
+    text-align: left;
+  }
+
+  &-form-label {
+    color: $white;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &-form-input {
+    display: block;
+    min-height: 2.5rem;
+    width: 100%;
+  }
+
+  &-form-submit {
+    background: $brand-blue;
+    border: 1px solid $white;
+    color: $white;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    min-height: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+.modal-appear,
+.modal-enter {
+  opacity: 0.01;
+  transform: scale(0);
+}
+
+.modal-appear.modal-appear-active,
+.modal-enter.modal-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 0.25s ease-in, transform 0.25s $bouncy6;
+}
+
+.modal-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-leave.modal-leave-active {
+  opacity: 0.01;
+  transform: scale(0);
+  transition: opacity 0.25s ease-in, transform 0.25s ease-in;
+}

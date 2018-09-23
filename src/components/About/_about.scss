@@ -1,7 +1,7 @@
 @import "scss/utils/_utils.scss";
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   margin-bottom: 6rem;
   text-align: left;
   transform: translateY(-37px);
@@ -51,7 +51,7 @@
     }
 
     @include bp(1543) {
-      tex-align: left;
+      text-align: left;
     }
   }
 
