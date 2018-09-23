@@ -5,8 +5,17 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  margin-bottom: -24px;
   position: relative;
   width: 100%;
+
+  @include bp(945) {
+    margin-bottom: -40px;
+  }
+
+  @include bp(945) {
+    margin-bottom: 0;
+  }
 
   &-header {
     // left: 12rem;

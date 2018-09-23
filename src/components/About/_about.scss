@@ -3,8 +3,9 @@
 .about {
   min-height: 100vh;
   margin-bottom: 6rem;
+  position: relative;
   text-align: left;
-  transform: translateY(-37px);
+  // transform: translateY(-37px);
   width: 100%;
 
   @include bp(900) {
@@ -135,13 +136,17 @@
       text-align: left;
       width: 90%;
 
-      @include bp(763) {
+      @include bp(600) {
         width: 63%;
       }
 
-      @include bp(1115) {
-        right: 3rem;
+      @include bp(741) {
         width: 40%;
+      }
+
+      @include bp(945) {
+        padding-bottom: 1.5rem;
+        width: 76%;
       }
 
       @include bp(1115) {

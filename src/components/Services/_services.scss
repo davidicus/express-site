@@ -1,9 +1,9 @@
 @import "scss/utils/_utils.scss";
 
 .services {
-  background: url("../img/deliveryDoodle.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  margin: 0 auto;
+  background: url("../img/deliveryDoodle.jpg") 50% 170% no-repeat;
+  // background-size: cover;
+  margin: 0 auto 3rem;
   min-height: 100vh;
   text-align: center;
   width: 90%;
@@ -20,12 +20,45 @@
     }
   }
 
-  p {
-    margin: 0 auto;
+  &-blurb {
+    margin: 0 auto 2.5rem;
     max-width: 545px;
 
     @include bp(1115) {
       font-size: 1.25rem;
+      margin: 0 auto 5.5rem;
+    }
+  }
+
+  // Card styles
+  &-card-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1115px;
+    margin: 0 auto;
+    text-align: left;
+
+    @include bp(1115) {
+      flex-direction: row;
+    }
+  }
+
+  &-card {
+    background: rgba($white, 0.75);
+    border: 1px solid $gray;
+    margin: 0 1rem 1rem;
+    padding: 1rem;
+
+    @include bp(1115) {
+      padding: 2rem;
+    }
+
+    h4 {
+      color: $brand-red;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      text-align: center;
     }
   }
 }

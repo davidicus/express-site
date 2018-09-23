@@ -13,7 +13,7 @@ class Services extends Component {
         <div className="services-card-wrap">
           <div className="services-card">
             <h4>Deliveries</h4>
-            <p>
+            <p className="services-card-blurb">
               We provide both scheduled and on demand deliveries, 24 hours a
               day, 7 days a week. We can handle packages of any size or shape
               and quantity
