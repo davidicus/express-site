@@ -14,55 +14,59 @@ class Rates extends Component {
         </div>
         <img src={warehouse} className="rates-photo" alt="warehouse" />
         <div className="rates-table">
-          <p
-            className="rates-table-item insurance"
-            data-price="$1.50 per delivery"
-          >
-            <span>Insurance</span>
-            <span>...........</span>
-            <span>$1.50 per delivery</span>
-          </p>
-          <p
-            className="rates-table-item waitingTime"
-            data-price="$0.40 per min / $24.00 per hour"
-          >
-            <span>Waiting Time</span>
-            <span>...........</span>
-            <span>$0.40 per min / $24.00 per hour</span>
-          </p>
-          <p
-            className="rates-table-item weight"
-            data-price="$0.08 per pound / first 20lbs free"
-          >
-            <span>Weight</span>
-            <span>...........</span>
-            <span>$0.08 per pound / first 20lbs free</span>
-          </p>
-          <p
-            className="rates-table-item boxTruck"
-            data-price="$
-$65.00 per hour / 2 hour minimum"
-          >
-            <span>Box Truck</span>
-            <span>...........</span>
-            <span>$ $65.00 per hour / 2 hour minimum</span>
-          </p>
-          <p
-            className="rates-table-item cancellations"
-            data-price="$10.00 minimum"
-          >
-            <span>Cancellations</span>
-            <span>...........</span>
-            <span>$10.00 minimum</span>
-          </p>
-          <p
-            className="rates-table-item airportFee"
-            data-price="$8.00 additional"
-          >
-            <span>Airport Fee</span>
-            <span>...........</span>
-            <span>$8.00 additional</span>
-          </p>
+          <div className="rates-table-group">
+            <p
+              className="rates-table-item insurance"
+              data-price="$1.50 per delivery"
+            >
+              <span>Insurance</span>
+              <span>...........</span>
+              <span>$1.50 per delivery</span>
+            </p>
+            <p
+              className="rates-table-item waitingTime"
+              data-price="$0.40 per min / $24.00 per hour"
+            >
+              <span>Waiting Time</span>
+              <span>...........</span>
+              <span>$0.40 per min / $24.00 per hour</span>
+            </p>
+            <p
+              className="rates-table-item weight"
+              data-price="$0.08 per pound / first 20lbs free"
+            >
+              <span>Weight</span>
+              <span>...........</span>
+              <span>$0.08 per pound / first 20lbs free</span>
+            </p>
+          </div>
+          <div className="rates-table-group">
+            <p
+              className="rates-table-item boxTruck"
+              data-price="$
+  $65.00 per hour / 2 hour minimum"
+            >
+              <span>Box Truck</span>
+              <span>...........</span>
+              <span>$ $65.00 per hour / 2 hour minimum</span>
+            </p>
+            <p
+              className="rates-table-item cancellations"
+              data-price="$10.00 minimum"
+            >
+              <span>Cancellations</span>
+              <span>...........</span>
+              <span>$10.00 minimum</span>
+            </p>
+            <p
+              className="rates-table-item airportFee"
+              data-price="$8.00 additional"
+            >
+              <span>Airport Fee</span>
+              <span>...........</span>
+              <span>$8.00 additional</span>
+            </p>
+          </div>
         </div>
       </div>
     );

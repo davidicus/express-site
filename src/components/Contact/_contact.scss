@@ -8,8 +8,45 @@
   transform: translateX(-1rem);
   width: calc(100% + 2rem);
 
+  @include bp(880) {
+    transform: translateX(-4rem);
+    width: calc(100% + 8rem);
+  }
+
   &.section {
+    max-width: none;
     padding: 2.5rem 1rem;
+
+    @include bp(880) {
+      padding: 3.5rem 4rem;
+    }
+  }
+
+  &-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1496px;
+    width: 100%;
+
+    @include bp(940) {
+      flex-direction: row;
+      align-self: center;
+      justify-self: center;
+
+      &-right {
+        margin: auto auto;
+        max-width: 500px;
+      }
+    }
+
+    &-right,
+    &-left {
+      width: 90%;
+    }
   }
 
   .section-header {
@@ -18,5 +55,33 @@
 
   &-blurb {
     color: #fff;
+  }
+
+  &-link {
+    display: block;
+    background: white;
+    color: $brand-red;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin: 4rem auto;
+
+    @include bp(940) {
+      margin: 4rem 0 0;
+    }
+  }
+
+  &-number,
+  &-addy {
+    display: block;
+    color: $white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    // text-align: center;
+  }
+
+  &-addy span {
+    display: block;
   }
 }
