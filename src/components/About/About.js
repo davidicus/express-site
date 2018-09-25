@@ -5,8 +5,8 @@ import driver from "../../img/driverPreview.jpeg";
 class About extends Component {
   render() {
     return (
-      <div id="about" className="about">
-        <p className="about-text">
+      <div id="about" className="about section">
+        <p className="about-text section-blurb">
           <span className="about-text__bold">Express Messenger Service</span>{" "}
           has been meeting the "On Demand" and "Scheduled" delivery requirements
           of top Florida businesses since 1985!

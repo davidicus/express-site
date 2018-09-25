@@ -34,5 +34,43 @@ body {
 
   @include bp(880) {
     height: calc(100vh - 228px);
+    padding: 1rem 4rem 0;
+  }
+}
+
+.section {
+  padding: 2.5rem 0;
+
+  // header styles
+  &-header {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+
+    @include bp(945) {
+      font-size: 2.5rem;
+    }
+  }
+
+  // blurb styles
+  &-blurb {
+    font-size: 1rem;
+    max-width: 340px;
+    width: 89%;
+
+    @include bp(800) {
+      max-width: 430px;
+    }
+
+    @include bp(945) {
+      font-size: 1.45rem;
+    }
+
+    @include bp(1115) {
+      font-size: 2rem;
+      max-width: 588px;
+      // max-width: 700px;
+    }
   }
 }

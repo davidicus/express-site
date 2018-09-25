@@ -14,7 +14,7 @@
   }
 
   @include bp(945) {
-    margin-bottom: 0;
+    margin-bottom: -55px;
   }
 
   &-header {
@@ -30,8 +30,12 @@
       padding-left: 5rem;
     }
 
+    @include bp(880) {
+      padding-left: 0;
+    }
+
     @include bp(1300) {
-      padding-left: 10rem;
+      padding-left: 6.5rem;
     }
 
     span {

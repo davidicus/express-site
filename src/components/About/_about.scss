@@ -2,7 +2,7 @@
 
 .about {
   min-height: 100vh;
-  margin-bottom: 6rem;
+  // margin-bottom: 6rem;
   position: relative;
   text-align: left;
   // transform: translateY(-37px);
@@ -18,12 +18,15 @@
 
   @include bp(1115) {
     padding-left: 3rem;
-    transform: translateY(-55px);
   }
 
   @include bp(1543) {
     max-width: 1496px;
-    margin: 0 auto 6rem;
+    margin: 0 auto;
+  }
+
+  &.section {
+    padding-top: 0;
   }
 
   &-text {
@@ -41,17 +44,13 @@
       max-width: 430px;
     }
 
-    @include bp(945) {
-      font-size: 1.45rem;
-    }
-
     @include bp(1115) {
-      font-size: 2rem;
       margin: 0 4rem 4rem auto;
       max-width: 588px;
     }
 
     @include bp(1543) {
+      margin: 0 0 4rem auto;
       text-align: left;
     }
   }
@@ -123,8 +122,9 @@
     }
 
     @include bp(1115) {
-      right: 3rem;
-      width: 40%;
+      // right: 3rem;
+      max-width: 583px;
+      width: 50%;
     }
 
     span {

@@ -2,21 +2,20 @@
 
 .rates {
   background: linear-gradient(45deg, $brand-blue, $brand-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
-  padding: 2.5rem;
   transform: translateX(-1rem);
   width: calc(100% + 2rem);
 
+  &.section {
+    padding: 2.5rem 1rem;
+  }
+
   h3 {
     color: $white;
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
     text-align: center;
-    text-transform: uppercase;
-
-    @include bp(945) {
-      font-size: 4.5rem;
-    }
   }
 
   &-blurb {
@@ -28,5 +27,30 @@
       font-size: 1.25rem;
       margin: 0 auto 5.5rem;
     }
+  }
+
+  &-table {
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &-table-item {
+    display: flex;
+    color: $white;
+    position: relative;
+    justify-content: space-between;
+
+    span {
+      flex: 1;
+    }
+
+    // &::after {
+    //   content: attr(data-price);
+    //   position: absolute;
+    //   right: 0;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
   }
 }
