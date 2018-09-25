@@ -1,14 +1,18 @@
 import React, { Component } from "react";
+import warehouse from "../../img/bigwarehousePreview.jpeg";
 
 class Rates extends Component {
   render() {
     return (
       <div id="rates" className="rates section">
-        <h3 className="rates-header section-header">Our Rates</h3>
-        <p className="rates-blurb section-blurb">
-          We offer the lowest rates in the business while still supplying first
-          rate service up and down the east coast.
-        </p>
+        <div>
+          <h3 className="rates-header section-header">Our Rates</h3>
+          <p className="rates-blurb section-blurb">
+            We offer the lowest rates in the business while still supplying
+            first rate service up and down the east coast.
+          </p>
+        </div>
+        <img src={warehouse} className="rates-photo" alt="warehouse" />
         <div className="rates-table">
           <p
             className="rates-table-item insurance"

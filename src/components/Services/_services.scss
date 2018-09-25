@@ -1,7 +1,6 @@
 @import "scss/utils/_utils.scss";
 
 .services {
-  background: url("../img/deliveryDoodle.jpg") 50% 170% no-repeat;
   background: #fff;
   // background-size: cover;
   // margin: 0 auto 3rem;
@@ -13,18 +12,20 @@
 
   &-header {
     color: #2d6eb6;
+    transform: translateY(-40px);
 
     @include bp(945) {
       transform: translateY(-200px);
     }
 
     @include bp(1115) {
-      transform: translateY(-100px);
+      transform: translateY(-20px);
     }
   }
 
   &-blurb.section-blurb {
     text-align: left;
+    transform: translateY(-40px);
     // margin: 0 auto 2.5rem;
     // max-width: 545px;
 
@@ -34,7 +35,7 @@
     }
 
     @include bp(1115) {
-      transform: translateY(-100px);
+      transform: translateY(-20px);
       // font-size: 1.25rem;
       max-width: 700px;
     }
