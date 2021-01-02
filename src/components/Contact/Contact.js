@@ -6,7 +6,7 @@ const Contact = () => (
       <div className="contact-wrap-left">
         <h3 className="section-header">Let's Talk</h3>
         <p className="contact-blurb section-blurb">
-          For the most reliable service in South Florida. Gauranteed. Anything,
+          For the most reliable service in South Florida. Guaranteed. Anything,
           Anywhere, Anytime.
         </p>
         <a className="contact-link" href="mailto:xpressmessenger@aol.com">
