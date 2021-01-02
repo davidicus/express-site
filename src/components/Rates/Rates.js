@@ -13,7 +13,10 @@ class Rates extends Component {
           </p>
         </div>
         <img src={warehouse} className="rates-photo" alt="warehouse" />
-        <div className="rates-table">
+        <a className="contact-number" href="tel:8776516024">
+          Call to get pricing. Up to 50% off for new customers!
+        </a>
+        {/* <div className="rates-table">
           <div className="rates-table-group">
             <p
               className="rates-table-item insurance"
@@ -67,7 +70,7 @@ class Rates extends Component {
               <span>$8.00 additional</span>
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

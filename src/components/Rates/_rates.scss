@@ -77,9 +77,10 @@
   }
 
   &-table-item {
-    display: flex;
+    display: grid;
     color: $brand-blue;
     font-weight: bold;
+    grid-template-columns: 1fr 1fr 2fr;
     position: relative;
 
     @include bp(891) {
@@ -108,5 +109,9 @@
     //   top: 50%;
     //   transform: translateY(-50%);
     // }
+  }
+
+  .contact-number {
+    color: $brand-blue;
   }
 }
