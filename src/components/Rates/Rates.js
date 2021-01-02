@@ -1,22 +1,20 @@
 import React, { Component } from "react";
 import warehouse from "../../img/bigwarehousePreview.jpeg";
 
-class Rates extends Component {
-  render() {
-    return (
-      <div id="rates" className="rates section">
-        <div>
-          <h3 className="rates-header section-header">Our Rates</h3>
-          <p className="rates-blurb section-blurb">
-            We offer the lowest rates in the business while still supplying
-            first rate service up and down the east coast.
-          </p>
-        </div>
-        <img src={warehouse} className="rates-photo" alt="warehouse" />
-        <a className="contact-number" href="tel:8776516024">
-          Call to get pricing. Up to 50% off for new customers!
-        </a>
-        {/* <div className="rates-table">
+const Rates = () => (
+  <div id="rates" className="rates section">
+    <div>
+      <h3 className="rates-header section-header">Our Rates</h3>
+      <p className="rates-blurb section-blurb">
+        We offer the lowest rates in the business while still supplying first
+        rate service up and down the east coast.
+      </p>
+    </div>
+    <img src={warehouse} className="rates-photo" alt="warehouse" />
+    <a className="contact-number" href="tel:8776516024">
+      Call to get pricing. Up to 50% off for new customers!
+    </a>
+    {/* <div className="rates-table">
           <div className="rates-table-group">
             <p
               className="rates-table-item insurance"
@@ -71,9 +69,7 @@ class Rates extends Component {
             </p>
           </div>
         </div> */}
-      </div>
-    );
-  }
-}
+  </div>
+);
 
 export default Rates;
