@@ -7,7 +7,7 @@ class Hero extends Component {
     this.heroSlide = [];
   }
 
-  addClassToNext = e => {
+  addClassToNext = (e) => {
     const current = this.heroSlide.indexOf(e.target);
     e.target.classList.remove("slidein");
     let next = current + 1;
@@ -21,10 +21,10 @@ class Hero extends Component {
     this.heroSlide = [
       document.getElementById("hero-slide1"),
       document.getElementById("hero-slide2"),
-      document.getElementById("hero-slide3")
+      document.getElementById("hero-slide3"),
     ];
 
-    this.heroSlide.forEach(slide => {
+    this.heroSlide.forEach((slide) => {
       slide.addEventListener("animationend", this.addClassToNext, false);
     });
 
@@ -32,7 +32,7 @@ class Hero extends Component {
   }
 
   componentUnMount() {
-    this.heroSlide.forEach(slide => {
+    this.heroSlide.forEach((slide) => {
       slide.removeEventListener("animationend", this.addClassToNext, false);
     });
   }
@@ -41,12 +41,15 @@ class Hero extends Component {
     return (
       <div className="hero">
         <h2 className="hero-header">
-          <span>One</span>
-          <span>Hour</span>
-          {/* switch out words }*/}
+          <span>We</span>
+          <span>Deliver</span>
+          {/* switch out words }
           <span id="hero-slide1">Pick Up</span>
           <span id="hero-slide2">Delivery</span>
-          <span id="hero-slide3">Guaranteed</span>
+          <span id="hero-slide3">Guaranteed</span>*/}
+          <span id="hero-slide1">Anything</span>
+          <span id="hero-slide2">Anywhere</span>
+          <span id="hero-slide3">Anytime</span>
         </h2>
         <div className="location-pointer">
           <h3>Check out our rates</h3>
