@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import warehouse from "../../img/bigwarehousePreview.jpeg";
+import warehouse from "../../img/panoWarehouse.jpeg";
 
 const Rates = () => (
   <div id="rates" className="rates section">
@@ -7,12 +7,13 @@ const Rates = () => (
       <h3 className="rates-header section-header">Our Rates</h3>
       <p className="rates-blurb section-blurb">
         We offer the lowest rates in the business while still supplying first
-        rate service up and down the east coast.
+        rate service up and down the east coast. Up to 50% off for new
+        customers!
       </p>
     </div>
     <img src={warehouse} className="rates-photo" alt="warehouse" />
     <a className="contact-number" href="tel:8776516024">
-      Call to get pricing. Up to 50% off for new customers!
+      Call to get pricing. (877) 651 - 6024.
     </a>
     {/* <div className="rates-table">
           <div className="rates-table-group">

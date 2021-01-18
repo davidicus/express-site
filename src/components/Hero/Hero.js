@@ -41,8 +41,8 @@ class Hero extends Component {
     return (
       <div className="hero">
         <h2 className="hero-header">
-          <span>We</span>
-          <span>Deliver</span>
+          <span>We Deliver</span>
+          <span>For You</span>
           {/* switch out words }
           <span id="hero-slide1">Pick Up</span>
           <span id="hero-slide2">Delivery</span>
