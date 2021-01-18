@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import boxCart from "../../img/boxCartPrev.jpeg";
-import driver from "../../img/driverPreview.jpeg";
+import boxCart from "../../img/courierPushingCart.jpeg";
+import driver from "../../img/driver.jpeg";
 
 const About = () => (
   <div id="about" className="about section">
