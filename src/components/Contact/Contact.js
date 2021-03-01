@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import fma from "../../img/fma.jpg";
 
 const Contact = () => (
   <section id="contact" className="contact section">
@@ -21,6 +22,9 @@ const Contact = () => (
           123 NW 13th St.
           <span>Boca Raton, FL 33432</span>
         </p>
+        <a href="http://www.floridamessenger.org/">
+          <img src={fma} alt="Florida Messenger Association" />
+        </a>
       </div>
     </div>
   </section>
