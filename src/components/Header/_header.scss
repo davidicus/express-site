@@ -1,3 +1,27 @@
 @import "scss/utils/_utils.scss";
 @import "components/Header/_headerLogo.scss";
 @import "components/Header/_headerNav.scss";
+
+.header-review-link {
+  background: linear-gradient(45deg, $brand-blue, $brand-red);
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: .75rem;
+
+  @media (min-width: 410px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 740px) {
+    font-size: 1.5rem;
+  }
+
+  b{
+    font-weight: bold;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+}

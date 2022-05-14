@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Hero extends Component {
   constructor(props) {
@@ -9,31 +9,31 @@ class Hero extends Component {
 
   addClassToNext = (e) => {
     const current = this.heroSlide.indexOf(e.target);
-    e.target.classList.remove("slidein");
+    e.target.classList.remove('slidein');
     let next = current + 1;
     if (current === 2) {
       next = 0;
     }
-    this.heroSlide[next].className = "slidein";
+    this.heroSlide[next].className = 'slidein';
   };
 
   componentDidMount() {
     this.heroSlide = [
-      document.getElementById("hero-slide1"),
-      document.getElementById("hero-slide2"),
-      document.getElementById("hero-slide3"),
+      document.getElementById('hero-slide1'),
+      document.getElementById('hero-slide2'),
+      document.getElementById('hero-slide3'),
     ];
 
     this.heroSlide.forEach((slide) => {
-      slide.addEventListener("animationend", this.addClassToNext, false);
+      slide.addEventListener('animationend', this.addClassToNext, false);
     });
 
-    this.heroSlide[0].className = "slidein";
+    this.heroSlide[0].className = 'slidein';
   }
 
   componentUnMount() {
     this.heroSlide.forEach((slide) => {
-      slide.removeEventListener("animationend", this.addClassToNext, false);
+      slide.removeEventListener('animationend', this.addClassToNext, false);
     });
   }
 
@@ -51,9 +51,9 @@ class Hero extends Component {
           <span id="hero-slide2">Anywhere</span>
           <span id="hero-slide3">Anytime</span>
         </h2>
-        <div className="location-pointer">
+        <a className="location-pointer" href="#rates">
           <h3>Check out our rates</h3>
-        </div>
+        </a>
       </div>
     );
   }

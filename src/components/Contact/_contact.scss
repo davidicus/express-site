@@ -13,6 +13,13 @@
     width: calc(100% + 8rem);
   }
 
+  a {
+    display: block;
+  }
+  b {
+    font-weight: bold;
+  }
+
   &.section {
     max-width: none;
     padding: 2.5rem 1rem;
@@ -69,6 +76,17 @@
 
     @include bp(940) {
       margin: 4rem 0 0;
+    }
+  }
+
+  &-review-link {
+    color: $white;
+    font-size: 1.85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    span {
+      text-decoration: underline;
     }
   }
 
