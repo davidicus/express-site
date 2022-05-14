@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import fma from "../../img/fma.jpg";
+import React, { Component } from 'react';
+import fma from '../../img/fma.jpg';
 
 const Contact = () => (
   <section id="contact" className="contact section">
@@ -24,6 +24,14 @@ const Contact = () => (
         </p>
         <a href="http://www.floridamessenger.org/">
           <img src={fma} alt="Florida Messenger Association" />
+        </a>
+
+        <a
+          className="contact-review-link"
+          href="https://g.page/r/CThdCVNZHxrWEAI/review"
+        >
+          Add a <span>review</span> on Google for <br /> a <b>FREE</b> local
+          delivery
         </a>
       </div>
     </div>
