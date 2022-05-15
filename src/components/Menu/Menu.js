@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Menu extends Component {
   handleClick = () => {
-    document.body.classList.remove("open");
+    document.body.classList.remove('open');
   };
 
   render() {

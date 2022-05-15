@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Services extends Component {
   render() {
@@ -25,7 +25,7 @@ class Services extends Component {
             <span className="services-card-content">
               <h4>Logistics</h4>
               <p className="services-card-blurb">
-                Efficiency and reliability are the keys to any business. At{" "}
+                Efficiency and reliability are the keys to any business. At{' '}
                 <span>Express Messenger Service</span> we get your goods where
                 they need to go on time!
               </p>

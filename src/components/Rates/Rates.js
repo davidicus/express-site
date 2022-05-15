@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import warehouse from '../../img/panoWarehouse.jpeg';
 
 const Rates = () => (
