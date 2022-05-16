@@ -34,7 +34,8 @@ class Header extends Component {
           className="header-review-link"
           href="https://g.page/r/CThdCVNZHxrWEAI/review"
         >
-          Add a <span>review</span> on Google for a <b>FREE</b> local delivery
+          Repeat customers, add a <span>review</span> on Google for a{' '}
+          <b>FREE</b> local delivery
         </a>
         <header className="main-header">
           <HeaderLogo />
