@@ -30,8 +30,8 @@ const Contact = () => (
           className="contact-review-link"
           href="https://g.page/r/CThdCVNZHxrWEAI/review"
         >
-          Add a <span>review</span> on Google for <br /> a <b>FREE</b> local
-          delivery
+          Repeat customers, add a <span>review</span> on Google for a{' '}
+          <b>FREE</b> local delivery
         </a>
       </div>
     </div>

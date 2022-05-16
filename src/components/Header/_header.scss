@@ -7,14 +7,19 @@
   display: block;
   color: white;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: .75rem;
+  line-height: 1.75;
+  font-size: 0.7rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
 
-  @media (min-width: 410px) {
+  @media (min-width: 520px) {
     font-size: 1rem;
   }
   @media (min-width: 740px) {
-    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    line-height: unset;
   }
 
   b{
