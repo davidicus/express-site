@@ -1,6 +1,6 @@
-@import "scss/utils/_utils.scss";
-@import "components/Header/_headerLogo.scss";
-@import "components/Header/_headerNav.scss";
+@import "../../scss/utils/_utils.scss";
+@import "_headerLogo.scss";
+@import "_headerNav.scss";
 
 .header-review-link {
   background: linear-gradient(45deg, $brand-blue, $brand-red);

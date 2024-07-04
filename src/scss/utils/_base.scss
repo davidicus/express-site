@@ -1,8 +1,8 @@
 /* stylelint-disable */
-@import "scss/utils/_utils.scss";
-@import "scss/utils/_reset.scss";
-@import "scss/utils/_typography.scss";
-@import "scss/utils/_a11y.scss";
+@import "_utils.scss";
+@import "_reset.scss";
+@import "_typography.scss";
+@import "_a11y.scss";
 
 #root {
   overflow-x: hidden;
