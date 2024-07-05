@@ -13,6 +13,9 @@ const Contact = () => (
         <a className="contact-link" href="mailto:xpressmessenger@aol.com">
           Contact us
         </a>
+        <a href={`/privacy`} className="contact-privacy-link">
+          Privacy Policy
+        </a>
       </div>
       <div className="contact-wrap-right">
         <a className="contact-number" href="tel:8776516024">
