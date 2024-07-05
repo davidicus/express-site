@@ -2,29 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Privacy = () => {
-  // const myRef = React.useRef(null);
-  // const executeScroll = () =>
-  //   myRef.current.scrollIntoView({ inline: 'center' });
-  // React.useEffect(() => {
-  //   setTimeout(() => {
-  //     executeScroll();
-  //   }, 0);
-  // }, []);
   return (
     <section className="privacy section">
       <div className="privacy-wrap">
         <Link to={`/`} className="privacy-back-link">
           {`<- Go Back`}
         </Link>
-        <h2
-          // ref={(node) => {
-          //   if (node) {
-          //     node.scrollIntoView({ inline: 'center' });
-          //   }
-          // }}
-          id="privacy"
-          className="section-header"
-        >
+        <h2 id="privacy" className="section-header">
           Privacy Policy
         </h2>
         <p>Privacy Policy for XpressMessenger.com</p>
