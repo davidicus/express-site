@@ -1,5 +1,6 @@
 import React from 'react';
 import fma from '../../img/fma.jpg';
+import { Link } from 'react-router-dom';
 
 const Contact = () => (
   <section id="contact" className="contact section">
@@ -13,6 +14,9 @@ const Contact = () => (
         <a className="contact-link" href="mailto:xpressmessenger@aol.com">
           Contact us
         </a>
+        <Link to={`/privacy`} className="contact-privacy-link">
+          Privacy Policy
+        </Link>
       </div>
       <div className="contact-wrap-right">
         <a className="contact-number" href="tel:8776516024">
